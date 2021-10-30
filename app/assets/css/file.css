@@ -1,0 +1,62 @@
+*{
+  margin:0 ;
+  padding: 0;
+}
+.logo{
+  margin-top:30px;
+  text-align:center;
+}
+.logo img{
+
+  width:45%;
+}
+.background{
+  background:rgba(0,0,0,0.7)url('../img/background.jfif');
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position:center center ;
+  background-attachment: fixed;
+}
+.parent{
+  padding-top: 10px;
+  padding-bottom: 15%;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  position:relative;
+  background-attachment: fixed;
+}
+
+.loginBox{
+  margin:auto;
+  height: 10cm;
+  width:10cm;
+  border:3px solid rgba(32,29,29,0.664);
+  box-sizing:content-box;
+  position: static;
+  background:rgba(109, 109, 109, 0.479);
+  border-radius: 30px 30px 30px 30px;
+  text-align: center;
+}
+.textboxes{
+height:1cm;
+width:4cm;
+font-size:15pt;
+border-radius:10mm;
+text-align:center;
+}
+b{
+  font-size: 15pt;
+}
+.buttons{
+  height: 1cm;
+  width:5cm;
+  background:yellow;
+  font-size: 15pt;
+  border-radius:10mm;
+  
+}
+.buttons strong:hover{
+  color:gray;
+}
+
+
