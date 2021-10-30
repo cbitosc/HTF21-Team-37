@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="assets\file.css">
+<div ng-app="myApp" ng-controller="myCtrl" class="background">
+   <div ng-hide="display"><select ng-model="arr" ng-options="x for x in arr">
+</select></div>
+    <!-- First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}} -->
+    <div class="logo"><img src="img/1.png" alt="logo" style="height: 3% "></div>
+    <div class="parent">
+            <div class="loginBox">
+                
+              
+               
+                
+                <button ng-click="login(userid,password)">View slots   </button>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <table class="table table-bordered">
+                            
+                                <thead>
+                                 <tr>
+                                    <th scope="col">S.no</th>
+                                  
+                                  <th scope="col">ONE</th>
+                                  <th scope="col">TWO</th>
+                                  <th scope="col">THREE</th>
+                                  <th scope="col">four</th>
+                                  <th scope="col">five</th>
+                                  <th scope="col">six</th>
+                                  <th scope="col">seven</th>
+                                  <th scope="col">eight</th>
+                                  
+                                  
+                                  </tr>
+                                </thead>
+                              <tbody>
+                                <tr  ng-repeat="list in lists"  >
+                                 <!--  <td>
+                                    <div class="custom-control custom-checkbox">ng-click="goToLink(list)"
+                                        <input type="checkbox" class="custom-control-input" id="mycheckbox" ng-model="user.selected">
+                                        <label class="custom-control-label" for="mycheckhbox"></label>
+                                    </div>
+                                  </td>
+                       -->
+                     
+                                
+                                  <td>{{ list.sq}}</td>
+                      
+                                  <td>{{list.one}}<input ng-model="list.value" ng-disabled="!list.one"></td>
+                                
+                                  <td>{{list.two}}<input ng-model="list.value" ng-disabled="list.one"></td>
+                                  <td>{{list.three}}<input ng-model="list.value" ng-disabled="list.one"></td>
+                                  <td>{{list.four}}<input ng-model="list.value" ng-disabled="list.one"></td>
+                                  <td>{{list.five}}<input ng-model="list.value" ng-disabled="list.one"></td>
+                                  <td>{{list.six}}<input ng-model="list.value" ng-disabled="list.one"></td>
+                                  <td>{{list.seven}}<input ng-model="list.value" ng-disabled="list.one"></td>
+                                  <td>{{list.eight}}<input ng-model="list.value" ng-disabled="list.one"></td>
+
+                                  
+
+
+                                  
+                                     
+                                </tr>
+                      
+                             
+                      
+                      
+                      
+                              </tbody>
+                      
+                                
+                               
+                              
+                            </table>
+                      
+                                <!-- <button ng-click= "saveEditUserForm()" type="button" class="btn btn-primary">{{button}}</button> -->
+                          </div>
+                        </div>
+                      </div> 
+             
+               
+           
+            </div>
+        </div>
+      <div></div>
+    
+    </div>
+</div>
+    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js">
+  
+    </script>
+    
